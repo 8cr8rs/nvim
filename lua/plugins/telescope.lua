@@ -18,7 +18,8 @@ return {
             "rg",
             "--files",
             "--hidden",
-            "--glob", "!**/.git/*",
+            "--glob",
+            "!**/.git/*",
           },
         },
       },
@@ -27,22 +28,26 @@ return {
     local telescope_builtin = require("telescope.builtin")
 
     keymap("n", "<leader>ff", function()
-        telescope_builtin.find_files({ hidden = true, no_ignore = false })
-      end,
-      { desc = "Telescope: Find Files" }
-    )
+      telescope_builtin.find_files({ hidden = true, no_ignore = false })
+    end, { desc = "Telescope: Find Files" })
 
-    keymap("n", "<leader>fg",
+    keymap(
+      "n",
+      "<leader>fg",
       telescope_builtin.live_grep,
       { desc = "Telescope: Find with Grep" }
     )
 
-    keymap("n", "<leader>fb",
+    keymap(
+      "n",
+      "<leader>fb",
       telescope_builtin.buffers,
       { desc = "Telescope: Find Buffers" }
     )
 
-    keymap("n", "<leader>fh",
+    keymap(
+      "n",
+      "<leader>fh",
       telescope_builtin.help_tags,
       { desc = "Telescope: Find Help" }
     )

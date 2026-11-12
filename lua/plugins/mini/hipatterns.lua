@@ -5,5 +5,5 @@ mini_hipatterns.setup({
   delay = {
     text_change = 0,
     scroll = 0,
-  }
+  },
 })

@@ -8,7 +8,9 @@ keymap("n", "<Space>", "<Nop>", { silent = true })
 -- =============
 
 keymap(
-  "n", "<leader>ln", ":set relativenumber!<CR>",
+  "n",
+  "<leader>ln",
+  ":set relativenumber!<CR>",
   { silent = true, desc = "Toggle relative line numbers" }
 )
 
@@ -25,7 +27,10 @@ keymap({ "n", "x" }, "<S-CR>", "<BS>", { silent = true })
 keymap({ "n", "x" }, "<S-BS>", "<CR>", { silent = true })
 
 -- relative line movement
-keymap({ "n", "x" }, "gg", function()
+keymap(
+  { "n", "x" },
+  "gg",
+  function()
     if vim.opt.relativenumber:get() and vim.v.count > 0 then
       return "k"
     else
@@ -36,14 +41,12 @@ keymap({ "n", "x" }, "gg", function()
 )
 
 keymap({ "n", "x" }, "G", function()
-    if vim.opt.relativenumber:get() and vim.v.count > 0 then
-      return "j"
-    else
-      return "G"
-    end
-  end,
-  { expr = true, desc = "Jump to end of file or line number (displayed)" }
-)
+  if vim.opt.relativenumber:get() and vim.v.count > 0 then
+    return "j"
+  else
+    return "G"
+  end
+end, { expr = true, desc = "Jump to end of file or line number (displayed)" })
 
 -- LSP-related
 keymap("n", "<leader><F2>", vim.lsp.buf.rename, { desc = "Rename symbol" })

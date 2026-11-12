@@ -21,7 +21,7 @@ return {
       },
       fuzzy = {
         implementation = "prefer_rust",
-      }
+      },
     },
   },
 }

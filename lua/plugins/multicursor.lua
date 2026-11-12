@@ -8,12 +8,12 @@ return {
     multicursor.setup()
 
     -- Add one cursor up
-    vim.keymap.set({"n", "x"}, "<C-Up>", function()
+    vim.keymap.set({ "n", "x" }, "<C-Up>", function()
       multicursor.lineAddCursor(-1)
     end)
 
     -- Add one cursor down
-    vim.keymap.set({"n", "x"}, "<C-Down>", function()
+    vim.keymap.set({ "n", "x" }, "<C-Down>", function()
       multicursor.lineAddCursor(1)
     end)
 

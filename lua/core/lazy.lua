@@ -4,7 +4,8 @@ local function setupPlugins()
 
   if not (vim.uv or vim.loop).fs_stat(lazyPath) then
     local stdout = vim.fn.system({
-      "git", "clone",
+      "git",
+      "clone",
       "--filter=blob:none",
       "--branch=stable",
       lazyRepo,
