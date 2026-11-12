@@ -28,14 +28,18 @@ mini_clue.setup({
     { mode = "x", keys = "g" },
 
     -- marks
+    -- stylua: ignore start
     { mode = "n", keys = "\'" },
     { mode = "x", keys = "\'" },
+    -- stylua: ignore end
     { mode = "n", keys = "`" },
     { mode = "x", keys = "`" },
 
     -- registers
+    -- stylua: ignore start
     { mode = "n", keys = "\"" },
     { mode = "x", keys = "\"" },
+    -- stylua: ignore end
     { mode = "i", keys = "<C-r>" },
     { mode = "c", keys = "<C-r>" },
 
