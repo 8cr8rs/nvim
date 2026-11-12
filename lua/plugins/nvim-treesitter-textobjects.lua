@@ -19,7 +19,7 @@ return {
             ["@parameter.outer"] = "v",
             ["@function.outer"] = "V",
             ["@class.outer"] = "<c-v>",
-          }
+          },
         },
       },
     })

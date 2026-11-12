@@ -13,7 +13,6 @@ vim.g.maplocalleader = " "
 vim.opt.number = true
 vim.opt.relativenumber = true
 
-
 -- # Tabs and indentation
 vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
@@ -24,7 +23,6 @@ vim.opt.expandtab = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true
 
-
 -- # Search
 -- Highlighting search results
 -- It helps to see the next one to jump to with n
@@ -33,7 +31,6 @@ vim.opt.hlsearch = true
 -- Don't search until user actually presses <CR>
 -- This keep nvim from lagging or making redundant searches
 vim.opt.incsearch = false
-
 
 -- # Visual guides
 -- Shows current cursor line as a horizontal bar
@@ -47,10 +44,8 @@ vim.opt.signcolumn = "yes"
 vim.opt.textwidth = 80
 vim.opt.colorcolumn = "+1"
 
-
 -- # Formatting
 vim.opt.formatoptions = "tcr"
-
 
 -- Colors
 -- Forces 24 bit color support
@@ -72,7 +67,6 @@ vim.wo.scrolloff = 16
 vim.wo.wrap = true
 vim.wo.linebreak = true
 vim.wo.breakindent = true
-
 
 -- ========
 -- autocmds

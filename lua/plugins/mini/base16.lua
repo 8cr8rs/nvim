@@ -23,7 +23,7 @@ if COLORTERM == nil or COLORTERM == "" then
     base0C = "#800080", -- Support, Regex
     base0D = "#00ffff", -- Functions, Methods
     base0E = "#ff00ff", -- Keywords, Storage
-    base0F = "#0000ff"  -- Deprecated
+    base0F = "#0000ff", -- Deprecated
   }
 else
   palette = {
