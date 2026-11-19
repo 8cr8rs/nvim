@@ -1,11 +1,11 @@
 return {
   {
     "saghen/blink.cmp",
-    version = "*",
+    version = "1.*",
 
     dependencies = {
-      -- Put snippets repos here
       "saghen/blink.lib",
+      "rafamadriz/friendly-snippets",
     },
 
     opts = {

@@ -1,0 +1,10 @@
+{
+  "contributes": {
+    "snippets": [
+      {
+        "language": ["global"],
+        "path": "./global.json"
+      }
+    ]
+  }
+}
