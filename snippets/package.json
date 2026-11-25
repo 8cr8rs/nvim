@@ -4,6 +4,10 @@
       {
         "language": ["global"],
         "path": "./global.json"
+      },
+      {
+        "language": ["c"],
+        "path": "./lang/c.json"
       }
     ]
   }
